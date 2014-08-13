@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block radio %}
+    {% for room in rooms.items %}
+        <td>
+            {% ifequal forloop.counter0 0 %}
+                <label><input type="radio" name="roomId" value={{room.id}} checked="checked" /><span>{{room.name}}</span></label>
+            {% else %}
+                <label><input type="radio" name="roomId" value={{room.id}} /><span>{{room.name}}</span></label>
+            {% endifequal %}
+        </td>
+    {% endfor %}
+{% endblock %}

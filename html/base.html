@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GAE HipChat</title>
+</head>
+<body>
+    <h1>API {{version}}</h1>
+    <form action="/{{version}}" method="POST">
+        <fieldset>
+            <legend>HipChat</legend>
+            <p>投稿先</p>
+            <table>
+                <tr>
+                    {% block radio %}
+                    {% endblock %}
+                </tr>
+            </table>
+
+            <div>
+                <label for="message">通知内容</label>
+                <input type="text" name="message" placeholder="hoge">
+            </duv>
+
+            <input type="submit" value="通知"/>
+        </fieldset>
+    </form>
+</body>
