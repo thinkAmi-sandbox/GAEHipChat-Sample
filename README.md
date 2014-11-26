@@ -28,3 +28,6 @@ Sent to HipChat Using Google App Engine (sample)
 
 ## License
 MIT
+
+## Related Blog Post (written in Japanese)
+[GoogleAppEngine/Pythonから、HipChat API v1/v2を使ってみた - メモ的な思考的な](http://thinkami.hatenablog.com/entry/2014/08/15/072455)
